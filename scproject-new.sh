@@ -12,7 +12,7 @@ if [ -n "$PROJECT_NAME" ]; then
     if [ ! -d "$PROJECT_NAME" ]; then
         # create dirs
         echo "# ====================================================="
-        mkdir -p "$PROJECT_NAME"/{Classes,HelpSource/Classes,Sketch}
+        mkdir -p "$PROJECT_NAME"/{Classes,HelpSource/Classes,Proto,Sketch}
         echo "# Created a new SuperCollider project: '"$PROJECT_NAME"'"
         # create a git repo and make an initial commit
         cd "$PROJECT_NAME"
