@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+bookmarks_list=''
+
+if [ -f ~/.shell_bookmarks ]; then
+    bookmarks_list=$(bookmarks_list_echo ~/.shell_bookmarks)
+fi
+
+echo -e "$bookmarks_list" | sed '/^\s*$/d'
